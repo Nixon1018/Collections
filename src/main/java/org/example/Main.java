@@ -15,10 +15,10 @@ public class Main{
         hmap.put("std5","patrick");
         String hash = ""+hmap;
         Log.info(hash);
-        String size = "Size: "+hmap.size();
-        Log.info(size);
         String key = ""+hmap.keySet();
         Log.info(key);
+        String size = "Size: "+hmap.size();
+        Log.info(size);
         String val = ""+hmap.values();
         Log.info(val);
         hmap.remove("std3");
