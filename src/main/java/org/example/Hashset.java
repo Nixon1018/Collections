@@ -4,13 +4,12 @@ import java.util.*;
 import java.util.logging.Logger;
 
 class Memberdetails {
-    String memberName;
-    String memberAddress;
+    String membername;
+    String memberaddress;
     int id;
 
-    Memberdetails(String MemberName, String MemberAddress, int id) {
-        this.memberName = memberName;
-        this.memberAddress = memberAddress;
+    Memberdetails(String Membername, String Memberaddress, int id) {
+        this.memberaddress = memberaddress;
         this.id = id;
     }
 
@@ -34,13 +33,13 @@ public class Hashset{
         String s1;
 
         for (Memberdetails s : set) {
-            s1 =s.memberName + " " + s.memberAddress+ " " + s.id;
+            s1 =s.membername + " " + s.memberaddress+ " " + s.id;
             Log.info(s1);
         }
         s1 = "" + set.remove(sd1);
         Log.info(s1);
         for (Memberdetails s : set) {
-            s1 = s.memberName + " " + s.memberAddress + " " + s.id;
+            s1 = s.membername + " " + s.memberaddress + " " + s.id;
             Log.info(s1);
         }
         s1 = ""+set.size();
