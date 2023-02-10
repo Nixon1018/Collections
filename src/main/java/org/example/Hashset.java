@@ -8,7 +8,7 @@ class Memberdetails {
     String memberaddress;
     int id;
 
-    Memberdetails(String Membername, String Memberaddress, int id) {
+    Memberdetails(String membername, String memberaddress, int id) {
         this.memberaddress = memberaddress;
         this.id = id;
     }
