@@ -3,21 +3,7 @@ package org.example;
 import java.util.*;
 import java.util.logging.Logger;
 
-class Memberdetails {
-    String membername;
-    String memberaddress;
-    int id;
 
-    Memberdetails(String membername, String memberaddress, int id) {
-        this.memberaddress = memberaddress;
-        this.id = id;
-    }
-
-    @Override
-    public int hashCode() {
-        return id;
-    }
-}
 
 public class Hashset{
     public static final Logger Log = Logger.getLogger("InfoLogging");
