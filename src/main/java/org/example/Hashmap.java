@@ -9,7 +9,7 @@ public class Hashmap {
     public static final Logger Log = Logger.getLogger("InfoLogging");
 
     public void map() {
-        HashMap<String, String> hmap = new HashMap();
+        HashMap<String, String> hmap = new HashMap<String, String>();
         hmap.put("std1", "luke");
         hmap.put("std2", "john");
         hmap.put("std3", "rick");
