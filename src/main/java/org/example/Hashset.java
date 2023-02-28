@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class Hashset {
     public static final Logger Log = Logger.getLogger("InfoLogging");
     public void set() {
-        HashSet<Memberdetails> set = new HashSet();
+        HashSet<Memberdetails> set = new HashSet<Memberdetails>();
         Memberdetails sd1 = new Memberdetails("luke", "1st street", 7);
         set.add(sd1);
         sd1 = new Memberdetails("rick", "2nd Street", 109);
