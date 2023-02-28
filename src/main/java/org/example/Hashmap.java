@@ -8,9 +8,6 @@ import java.util.logging.Logger;
 public class Hashmap {
     public static final Logger Log = Logger.getLogger("InfoLogging");
 
-    public Hashmap() {
-    }
-
     public void map() {
         HashMap<String, String> hmap = new HashMap();
         hmap.put("std1", "luke");
