@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class Treeset {
     public static final Logger Log = Logger.getLogger("InfoLogging");
     public void tree() {
-        TreeSet<String> names = new TreeSet(new Comparator<String>() {
+        TreeSet<String> names = new TreeSet<String>(new Comparator<String>() {
             public int compare(String s1, String s2) {
                 return s1.compareTo(s2);
             }
