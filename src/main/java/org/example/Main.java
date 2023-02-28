@@ -3,10 +3,12 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
+    private static final Logger logger = Logger.getLogger("InfoLogging");
+    
     public static void main(String [] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("1.Array 2.Arraylist 3.list 4.Quiet");
+        logger.info("1.Array 2.Arraylist 3.list 4.Quiet");
         int n=1;
         do {
             int choice = sc.nextInt();
