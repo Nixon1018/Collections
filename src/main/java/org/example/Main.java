@@ -1,33 +1,38 @@
 package org.example;
 
 import java.util.HashMap;
+import java.util.Scanner;
+import java.util.TreeSet;
 import java.util.logging.Logger;
 
 public class Main{
     public static final Logger Log = Logger.getLogger("InfoLogging");
     public static void main(String[] args) {
-        HashMap<String,String> hmap = new HashMap<String,String>();
-
-        hmap.put("std1","luke");
-        hmap.put("std2","john");
-        hmap.put("std3","rick");
-        hmap.put("std4","brook");
-        hmap.put("std5","patrick");
-        String hash = ""+hmap;
-        Log.info(hash);
-        String key = ""+hmap.keySet();
-        Log.info(key);
-        String size = "Size: "+hmap.size();
-        Log.info(size);
-        String val = ""+hmap.values();
-        Log.info(val);
-        hmap.remove("std3");
-        hash = ""+hmap;
-        Log.info(hash);
-        hmap.replace("std2", "pravin");
-        hash = ""+hmap;
-        Log.info(hash);
-        Log.info(hmap.get("std4"));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1.Hashmap 2.Treeset 3.Hashset 4.Quiet");
+        int n=1;
+        do {
+            int choice = sc.nextInt();
+            if(choice==1)
+            {
+                Hashmap m = new Hashmap();
+                m.map();
+            }
+            if(choice==2)
+            {
+                Treeset s = new Treeset();
+                s.tree();
+            }
+            if (choice==3)
+            {
+                Hashset h = new Hashset();
+                h.set();
+            }
+            if(choice==4)
+            {
+                n=0;
+            }
+        }while(n==1);
 
     }
 

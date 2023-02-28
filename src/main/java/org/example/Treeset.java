@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class Treeset{
     public static final Logger Log = Logger.getLogger("InfoLogging");
-    public static void main(String[] args) {
+    public void tree () {
         TreeSet<String> names = new TreeSet<>(new Comparator<String>() {
             @Override
             public int compare(String s1, String s2) {
