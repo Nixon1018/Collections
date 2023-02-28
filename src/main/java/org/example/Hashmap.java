@@ -29,6 +29,6 @@ public class Hashmap {
         hmap.replace("std2", "pravin");
         hash = "" + hmap;
         Log.info(hash);
-        Log.info((String)hmap.get("std4"));
+        Log.info(hmap.get("std4"));
     }
 }
