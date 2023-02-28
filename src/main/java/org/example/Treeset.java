@@ -7,10 +7,6 @@ import java.util.logging.Logger;
 
 public class Treeset {
     public static final Logger Log = Logger.getLogger("InfoLogging");
-
-    public Treeset() {
-    }
-
     public void tree() {
         TreeSet<String> names = new TreeSet(new Comparator<String>() {
             public int compare(String s1, String s2) {
