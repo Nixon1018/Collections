@@ -26,9 +26,9 @@ public class Treeset {
         names.remove("jessy");
         stree = "" + names;
         Log.info(stree);
-        stree = "First element: " + (String)names.first();
+        stree = "First element: " + names.first();
         Log.info(stree);
-        stree = "Last element: " + (String)names.last();
+        stree = "Last element: " + names.last();
         Log.info(stree);
         String size = "Length: " + names.size();
         Log.info(size);
